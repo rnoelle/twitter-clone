@@ -3,6 +3,7 @@ $(document).ready(function () {
   var userUsername = '@joeschmo';
   var userAvatar = './img/alagoon.jpg';
 
+//NEW TWEET FUNCTION
   var newTweet = function (text) {
 
     $('.new').addClass('.tweet');
@@ -51,25 +52,6 @@ $(document).ready(function () {
               '</div>' +
             '</div>');
 
-            // //COPIED THE EVENT HANDLERS
-            // $('#tweet-submit').on('click', function () {
-            //     var tweetText = $('.tweet-compose').val();
-            //     $('.tweet-compose').val('');
-            //     newTweet(tweetText);
-            //     $('#tweet-controls').css('visibility', 'hidden');
-            //     $('.tweet-compose').animate({height:'2.5em'}, 'fast');
-            // });
-            //
-            //
-            // $('.new').hover(function () {
-            //   $(this).find('.tweet-actions').css('visibility','visible');
-            // }, function () {
-            //   $(this).find('.tweet-actions').css('visibility','hidden');
-            // });
-            //
-            // $('.new').on('click', function () {
-            //   $(this).find('.stats').slideDown('fast');
-            // });
 
     };
 
@@ -126,20 +108,8 @@ $(document).ready(function () {
       $('.tweet-compose').animate({height:'2.5em'}, 'fast');
   });
 
-//TWEET HOVER + CLICK
-  // $('.tweet, .new').hover(function () {
-  //   $(this).find('.tweet-actions').css('visibility','visible');
-  // }, function () {
-  //   $(this).find('.tweet-actions').css('visibility','hidden');
-  // });
-  //
-  // $('.tweet, .new').on('click', function () {
-  //   $(this).find('.stats').slideDown();
-  // });
-  // $('.tweet, .new').on('mouseleave', function () {
-  //   $(this).find('.stats').slideUp();
-  // });
 
+//CLICK AND HOVER HANDLERS
   var isClicked = false;
 var replyClicked = false;
 
@@ -158,13 +128,9 @@ $(document).on('click', '.tweet', function(){
   else if (!replyClicked){
   $(this).find('.stats').slideToggle('fast');
   $(this).find('.tweet-actions').show();
-//   isClicked = true;
 }
-// //   isClicked = false;
 });
 
-//TWEET ACTIONS ON HOVER
-// if (!isClicked){
 $(document).on('mouseenter', '.tweet',function(){
   $(this).find('.tweet-actions').css({"visibility": "visible"});
 });
