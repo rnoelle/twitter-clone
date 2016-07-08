@@ -125,11 +125,9 @@ $(document).on('focusout', '.reply', function(){
 $(document).on('click', '.tweet', function(){
   if (replyClicked){
     $(this).find('.stats').show();
-    $(this).find('.tweet-actions').show();
   }
   else if (!replyClicked){
   $(this).find('.stats').slideToggle('fast');
-  $(this).find('.tweet-actions').show();
 }
 });
 
