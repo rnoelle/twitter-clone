@@ -129,6 +129,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			visibility: hidden;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -159,6 +160,27 @@ body {
 		font-size: 12px;
 		color: #999;
 	}
+
+	.new {
+		clear: both;
+		padding: 9px 12px;
+		border-bottom: 1px solid #e8e8e8;
+		min-height: 60px;
+		border-radius: 6px;
+	}
+
+		.new .avatar {
+			float: left;
+			margin-right: 10px;
+		}
+		.new .fullname {
+			font-size: 14px;
+		}
+		.new .username {
+			font-size: 12px;
+			color: #999;
+		}
+
 	.tweet-text {
 		font-size: 14px;
 		color: #333;
@@ -168,6 +190,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		visibility: hidden;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -211,6 +234,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -259,4 +283,8 @@ body {
 				left: 0;
 			}
 
-
+	time {
+		font-size: .75em;
+		color: #444;
+		margin: 10px 2px;
+	}
