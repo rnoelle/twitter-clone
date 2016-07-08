@@ -70,11 +70,11 @@ body {
 #page-container {
 	padding: 54px 14px 15px;
 	margin: 0 auto;
-	width: 837px;
+	width: 890px;
 }
 #main {
 	float: right;
-	width: 522px;
+	width: 550px;
 	background-color: white;
 	border-radius: 6px;
 }
@@ -89,7 +89,7 @@ body {
 	border-radius: 6px;
 	background-color: white;
 	float: left;
-	width: 302px;
+	width: 300px;
 }
 	/* Profile */
 	#profile-summary, #tweet-content {

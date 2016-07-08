@@ -3,14 +3,16 @@ $(document).ready(function () {
   var userUsername = '@joeschmo';
   var userAvatar = './img/alagoon.jpg';
 
+
 //NEW TWEET FUNCTION
   var newTweet = function (text) {
 
     $('.new').addClass('.tweet');
     $('div').removeClass('.new');
 
-    var timeStamp = new Date();
-    timeStamp = timeStamp.toISOString();
+    var time = new Date();
+    var timeStamp = time.toISOString();
+    var month =
     $('#stream').prepend(
       '<div class="tweet">' +
         '<div class="content">' +
@@ -37,12 +39,12 @@ $(document).ready(function () {
                   '</div>' +
                   '<div class="users-interact">' +
                     '<div>' +
-                      '<img src="img/damenleeturks.jpg" />' +
-                      '<img src="img/vklimenko.jpg" />' +
+                      '<img src="img/damenleeturks.jpg" data-toggle="tooltip" title="@mybff"/>' +
+                      '<img src="img/vklimenko.jpg" data-toggle="tooltip" title="@vkli"/>' +
                     '</div>' +
                   '</div>' +
                   '<div>' +
-                  '<time class="timeago" datetime="' + timeStamp + '"></time>' +
+                  '<time class="timeago">' + jQuery.timeago(new Date()) + '</time>' +
                   '</div>' +
                 '</div>' +
                 '<div class="reply">' +

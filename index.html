@@ -3,7 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+		<!-- Latest compiled and minified JavaScript -->
 
+		<!-- my CSS -->
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 
 	</head>
@@ -79,8 +86,8 @@
 
 										<!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
 										<!-- HINT: Bootstrap has good documentation =) -->
-										<img src="img/alagoon.jpg" />
-										<img src="img/vklimenko.jpg" />
+										<img src="img/alagoon.jpg" data-toggle="tooltip" title="@joeschmo"/>
+										<img src="img/vklimenko.jpg" data-toggle="tooltip" title="@vlki"/>
 									</div>
 								</div>
 
@@ -122,8 +129,8 @@
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/jennyshen.jpg" />
-										<img src="img/damenleeturks.jpg" />
+										<img src="img/jennyshen.jpg" data-toggle="tooltip" title="@jenshen"/>
+										<img src="img/damenleeturks.jpg" data-toggle="tooltip" title="@mybff"/>
 									</div>
 								</div>
 								<div>
@@ -162,11 +169,13 @@
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/vklimenko.jpg" />
-										<img src="img/funwatercat.jpg" />
+										<img src="img/vklimenko.jpg" data-toggle="tooltip" title="@vkli"/>
+										<img src="img/funwatercat.jpg" data-toggle="tooltip" title="@wtrcat"/>
 									</div>
 								</div>
-								<time class="timeago" datetime="2011-12-17T09:24:17Z">December 17, 2011</time>
+								<div>
+								<time class="timeago" datetime="2016-07-02T09:24:17Z">July 2, 2016</time>
+								</div>
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
@@ -178,6 +187,7 @@
 			</div><!-- #main -->
 		</div><!-- #page-container -->
 		<script src="./js/jquery-2.0.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="./js/animations.js"></script>
 		<script src='./js/timeago.js'></script>
 		<script type="text/javascript">
